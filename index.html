@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+     *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+ 
+ 
+    nav{
+            width:100%;
+            height:60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 3px;
+            background: #fff;
+          
+            
+
+       }
+    .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            color:rgb(23, 23, 23);
+            text-shadow: 5px rgb(90, 55, 55);
+            font-family: Arial, Helvetica, sans-serif;
+            font-style:italic;
+            font-style:italic;
+            text-decoration: underline;
+            
+        }
+  .menu a
+        {
+            text-decoration: none;
+            color: rgb(19, 3, 3);
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+    .menu a:hover{
+        color: rgb(236, 246, 249);
+    }
+    .register
+    {   
+        display: flex;
+        color: rgb(1, 0, 6);
+        font-size: 20px;
+        margin: 10px;
+        padding: 5px;
+        width: 10%;
+    }
+    .register a{
+        color: black;
+        text-decoration: none;
+        margin:0 10px 2px
+
+    }
+    .register a:hover{
+        color: black;
+    }
+    .home
+    {
+        height: 100vh;
+        background:linear-gradient(-90deg,#1a141b 65%,#1a141b 35%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20%;
+
+    }
+     img{
+        width: 60%;
+        height:60%;
+        border-radius: 20%;
+        margin-right: 10%;
+        background:linear-gradient(#ffff0f,rgb(124, 21, 38),rgb(210, 14, 210),rgb(0, 34, 128));
+        padding: 10px;
+    }
+    .homecon{
+        max-width: 600px;
+        color: white;
+        text-align: left;
+
+    }
+    .homecon h1{
+        font-size: 55px;
+        line-height: 1.2;
+    }
+    .homecon h3{
+        font-size: 40px;
+        color: rgb(9, 34, 79);
+        -webkit-text-stroke: .5px rgb(234, 247, 252);
+        background: linear-gradient(yellow,#a000f0);
+        background-repeat: no-repeat;
+        animation: animateText 6s linear infinite;
+
+    }
+    @keyframes animateText{
+       0%,65%,100%{
+        background-position: -410px 0;
+         width: 70%;
+         margin-left: 179px;
+       }
+       65%,80%{
+            background-position: 0 0;
+       }
+
+
+    }
+    
+    .homecon p{
+        font-size: 16px;
+        margin-top: 20px;
+
+    }
+    .homesci{
+        margin: 25px 0 40px;
+    }
+    .homesci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        border:2px solid white;
+        border-radius: 50%;
+        font-size: 20px;
+        color: fdf5e6;
+        text-decoration: none;
+        margin-left: 12px;
+       
+        transition: 0.5s;
+   }
+   .homesci a:hover{
+      background: rgb(76, 76, 206);
+      color: #ffff;
+      border-color: rgb(79, 79, 183);
+      box-shadow: 0 0 10px rgb(91, 140, 230);
+   }
+   .btn
+   {
+    margin-top: 25px;
+    padding: 12px 35px;
+    background-color: rgb(83, 83, 221);
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 0 10px blue;
+   }
+   .btn:hover{
+    background: black;
+    color: white;
+    box-shadow: #ffff;
+    border-bottom: 2px solid white;
+   }
+   .sec2 h2{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      background: black;
+      width:100%;
+      height: 37px;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 25px;
+     
+   }
+
+   .sec3 h3{
+    
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      background: black;
+      width:100%;
+      height: 20px;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 25px;
+   }
+   .lan li{
+    justify-content: center;
+    display: flex;
+    background: rgb(202, 187, 187);
+    border-radius: 10%;
+    margin: 15px;
+    width: 20%;
+    height: 20%;
+   }
+   .lan li:hover{
+       background: #a000f0;
+       color: white;
+   }
+   .imgg h2{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-style: italic;
+     border-bottom: 2px solid red;
+     
+   }
+   .imgg h3{
+     font-family: Arial, Helvetica, sans-serif;
+     font-style: bold;
+   }
+   .ach h2{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-style: italic;
+     border-bottom: 2px solid red;
+   }
+   .images
+   {
+    display: flex;
+     margin:20px;
+     padding:30px;    
+   }
+   .sec2{
+    background-color:  rgb(224, 217, 232);
+   }
+ 
+   
+   .meet:hover{
+    background: rgb(50, 56, 59);
+
+   }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sujal Arora</div>
+            <div class="menu">
+                <a href="#">Skills</a>
+                <a href="#">Open Source</a>
+                <a href="#">Projects</a>
+                <a href="#">Achievements</a>
+                <a href="#">Blogs</a>
+                <a href="#">Talks</a>
+                <a href="#">Contact Me</a>
+            </div>
+            <div class="register">
+                <a href="#">Contact</a>
+                <a href="#">Email</a>
+            </div>
+          
+        </nav>
+    </header>
+        <section class="home">
+                <img src="coder.jpg" alt="">
+             <div class="homecon">
+                <h1>Hi all I'm Sujal &#128075 </h1>
+          
+                <p>     A passionate Front End Web Developer &#128640; having an experience of building Web applications with Javascript / HTML / CSS and some other cool libraries and frameworks </p>
+             
+            <div class="homesci">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+              </div>
+                <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+    <section>
+    <div class="sec2">
+        <h2>About me!</h2>
+        <hr class="w3-opacity">
+        <p>     I am a passionate front-end developer experienced in creating visually stunning and SEO-Friendly websites and applications.
+        
+            As a passionate front-end developer, I design and develop complex interfaces with expertise in HTML and CSS.
+            I am a highly analytical front-end developer with expertise in HTML, CSS, JavaScript, and various front-end frameworks. </p>
+    </section>
+    <section class="sec3">
+        <h3 class="w3-padding-16">My Skills</h3>
+    <p class="wide">Project management</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 50%;" >95%</div>
+    </div>
+    <p class="wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:40%">85%</div>
+    </div>
+    <p class="wide">Programming</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:30%">80%</div>
+    </div><br>
+    </section>
+    <section class="lan">
+         <div class="imgg">
+            <h2>Technologies</h2>
+            
+         </div>
+         <ul>
+            <li> Html</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+         </ul>
+        </div>
+    </section>
+  
+    <section class="meet">
+    
+        <div class="w3-row w3-center w3-dark-grey w3-padding-26 w3-section">
+    
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">15+</span><br>
+              Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">1000+</span><br>
+              Hours Devoted
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">50+</span><br>
+              Attended Meetings
+            </div>
+          </div>
+    </section>
+    <section>
+        <div class="w3-padding-32 w3-content w3-text-black"  style="margin-bottom:64px">
+            <h2><u>Contact Me</u></h2>
+            <hr class="w3-opacity">
+        
+            <div class="w3-section">
+              <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Delhi,India</p>
+              <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9293000000</p>
+              <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: arorasujal13@gmail.com</p>
+            </div>
+    </section>
+    <footer class="w3-container w3-padding-64 w3-black w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">Powered by <a href="#" target="_blank" class="w3-hover-text-green">Sujal Arora</a></p>
+          <!-- End footer -->
+          </footer>
+
+</body>
+</html>
